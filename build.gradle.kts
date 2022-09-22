@@ -29,6 +29,7 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     testImplementation("org.testcontainers:junit-jupiter")
     testImplementation("org.testcontainers:testcontainers")
+    testImplementation("org.awaitility:awaitility:4.2.0")
     compileOnly("org.graalvm.nativeimage:svm")
 
     implementation("io.micronaut:micronaut-validation")
