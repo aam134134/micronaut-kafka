@@ -10,7 +10,7 @@ plugins {
 version = "0.1"
 group = "micronaut.kafka"
 
-val kotlinVersion=project.properties.get("kotlinVersion")
+val kotlinVersion = project.properties.get("kotlinVersion")
 repositories {
     mavenCentral()
 }
@@ -27,9 +27,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     runtimeOnly("ch.qos.logback:logback-classic")
-    testImplementation("org.testcontainers:junit-jupiter")
-    testImplementation("org.testcontainers:testcontainers")
+    testImplementation("org.testcontainers:junit-jupiter:1.17.3")
+    testImplementation("org.testcontainers:testcontainers:1.17.3")
     testImplementation("org.awaitility:awaitility:4.2.0")
+    testImplementation("org.testcontainers:kafka:1.17.3")
     compileOnly("org.graalvm.nativeimage:svm")
 
     implementation("io.micronaut:micronaut-validation")
@@ -71,5 +72,9 @@ micronaut {
     }
 }
 
-
-
+tasks.withType<Test> {
+    this.testLogging {
+        outputs.upToDateWhen { false }
+        this.showStandardStreams = true
+    }
+}
