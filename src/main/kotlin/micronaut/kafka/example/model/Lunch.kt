@@ -1,4 +1,4 @@
-package micronaut.kafka.model
+package micronaut.kafka.example.model
 
 import io.micronaut.core.annotation.Introspected
 

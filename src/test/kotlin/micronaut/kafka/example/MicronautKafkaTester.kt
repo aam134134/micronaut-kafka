@@ -1,4 +1,4 @@
-package micronaut.kafka
+package micronaut.kafka.example
 
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest
 import io.micronaut.test.support.TestPropertyProvider

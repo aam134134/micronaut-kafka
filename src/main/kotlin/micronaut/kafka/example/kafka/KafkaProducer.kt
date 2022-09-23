@@ -1,9 +1,9 @@
-package micronaut.kafka.client
+package micronaut.kafka.example.kafka
 
 import io.micronaut.configuration.kafka.annotation.KafkaClient
 import io.micronaut.configuration.kafka.annotation.KafkaKey
 import io.micronaut.configuration.kafka.annotation.Topic
-import micronaut.kafka.model.Lunch
+import micronaut.kafka.example.model.Lunch
 
 @KafkaClient(id = "lunch-client", acks = KafkaClient.Acknowledge.ALL)
 interface KafkaProducer {

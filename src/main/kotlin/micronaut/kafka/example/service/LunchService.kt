@@ -1,8 +1,8 @@
-package micronaut.kafka.service
+package micronaut.kafka.example.service
 
 import jakarta.inject.Singleton
-import micronaut.kafka.client.KafkaProducer
-import micronaut.kafka.model.Lunch
+import micronaut.kafka.example.kafka.KafkaProducer
+import micronaut.kafka.example.model.Lunch
 import javax.annotation.PostConstruct
 
 @Singleton

@@ -1,8 +1,8 @@
-package micronaut.kafka.service
+package micronaut.kafka.example.service
 
 import jakarta.inject.Singleton
-import micronaut.kafka.model.Lunch
-import micronaut.kafka.model.LunchCount
+import micronaut.kafka.example.model.Lunch
+import micronaut.kafka.example.model.LunchCount
 import java.util.concurrent.ConcurrentHashMap
 
 @Singleton

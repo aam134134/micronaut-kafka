@@ -1,10 +1,10 @@
-package micronaut.kafka.listener
+package micronaut.kafka.example.listener
 
 import jakarta.inject.Inject
-import micronaut.kafka.model.Lunch
-import micronaut.kafka.service.LunchFrequencyService
-import micronaut.kafka.service.LunchService
-import micronaut.kafka.MicronautKafkaTester
+import micronaut.kafka.example.model.Lunch
+import micronaut.kafka.example.service.LunchFrequencyService
+import micronaut.kafka.example.service.LunchService
+import micronaut.kafka.example.MicronautKafkaTester
 import org.awaitility.Awaitility
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
